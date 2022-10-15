@@ -1,2 +1,0 @@
-DELETE FROM Magazines
-WHERE Edition IS NULL;
