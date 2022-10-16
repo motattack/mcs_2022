@@ -1,7 +1,7 @@
 # mcs_2022 🏴
 
 > # Решения/ответы БД:
-> [Курс от openedu](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwimnbyp3eT6AhUJvYsKHbozAFIQFnoECAwQAQ&url=https%3A%2F%2Fopenedu.ru%2Fcourse%2Fspbu%2FDTBS%2F&usg=AOvVaw0N6oEI-_XwxuDdwjHYAA3d) << [pdf](https://github.com/motattack/mcs_2022/tree/main/db/openedu)
+> [Курс от openedu](https://openedu.ru/course/spbu/DTBS/?session=fall_2022_dvfu) << [pdf](https://github.com/motattack/mcs_2022/tree/main/db/openedu)
 >
 > [Базы данных 2022 Б9121 ](https://imcs.dvfu.ru/cats/problems?cid=6147676) << [sql](https://github.com/motattack/mcs_2022/tree/main/db/cats) 
 >
