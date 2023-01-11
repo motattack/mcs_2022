@@ -1,0 +1,176 @@
+\documentclass[12pt]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+
+\title{Разбор заданий экзамена}
+\date{Январь 2023}
+
+\begin{document}
+	\maketitle
+	
+	\chapter{Вариант 6}
+	
+	\section{Задание 2}
+	Найти область сходимости
+	$$
+	\sum_{n=1}^{\infty}
+	\left(-1 \right)^{n}
+	5^{-n^{2}
+		\arctg \frac{1}{n|x|}}
+	$$
+	
+	$$
+	dom (\sum) = 
+	\{x : x \neq 0\}
+	$$
+	
+	Коши
+	
+	$$
+	C_n =
+	\sqrt[n]{\left|U_n(x)\right|} = 
+	\sqrt[n]{5^{-n^{2}
+			\arctg \frac{1}{n|x|}}} = 
+	5^{-n \arctg \frac{1}{n|x|}}
+	$$
+	
+	$C_n \rightarrow q < 1$ - сходится
+	
+	
+	$C_n \rightarrow q > 1$ - расходится
+	
+	
+	$C_n \rightarrow q = 1$ - не ясно
+	
+	$$
+	\lim_{n \rightarrow \infty}
+	5^{-n \arctg \frac{1}{n|x|}} = 
+	\lim_{n \rightarrow \infty}
+	5^{-n \frac{1}{n|x|}} = 
+	5^{-\frac{1}{|x|}} < 1 \iff
+	\forall x \neq 0
+	$$
+	
+	Обл. сх $\left(\sum\right) = \{x : x \neq 0\}$
+	\newpage
+	
+	\section{Задание 7}
+	С помощью дифференцирования по параметру вычислить интеграл
+	$$f
+	(a, b, c) =
+	\int_{0}^{\infty}
+	\ln
+	\frac{b^{2} + x^{2}}{c^{2} + x^{2}}
+	\cos ax dx
+	$$
+	
+	Считаем a, b, c > 0
+	
+	$$
+	\frac{\delta f}{\delta b} = 
+	\int_{0}^{\infty}
+	\frac{c^{2} + x^{2}}{b^{2} + x^{2}}
+	\frac{2b}{c^{2} + x^{2}} dx =
+	(*)
+	$$
+	
+	*// Формулы, которые надо знать к экзамену:
+	$$
+	\int_{0}^{\infty}
+	\frac{\sin ax}{x} dx = 
+	\frac{\pi}{2} sgn a
+	- \textbf{Дирихле}
+	$$
+	
+	$$
+	\int_{0}^{\infty}
+	e^{-ax^{2}} dx =
+	\frac{1}{2}
+	\sqrt{\frac{\pi}{a}}
+	- \textbf{Эйлера-Пуассона}
+	$$
+	
+	$$
+	\int_{0}^{\infty}
+	\sin ax^{2} dx =
+	\int_{0}^{\infty}
+	\cos ax^{2} dx
+	- \textbf{Френеля}
+	$$
+	
+	$$
+	\int_{0}^{\infty}
+	\frac{\cos ax}{1+x^2} dx; \quad
+	\int_{0}^{\infty}
+	\frac{x \sin ax}{1+x^2} dx
+	- \textbf{Лапласа}
+	$$
+	
+	$$
+	\int_{0}^{\infty}
+	\frac{f(ax) - f(bx)}{x} dx
+	- \textbf{Фруллани}
+	$$
+	
+	Интегралы Эйлера
+	$$
+	B(x, y) =
+	\int_{0}^{1}
+	t^{x-1} \left(1 - t\right)^{y-1} dt
+	$$
+	
+	$$
+	Г(x) = 
+	\int_{0}^{\infty}
+	t^{x-1} e^{-t} dt
+	$$
+	
+	//*
+	
+	$$
+	(*) = 
+	2 
+	\int_{0}^{\infty}
+	\frac{\cos ax}{1 + \left(\frac{x}{b} \right)^{2}} d\left(\frac{x}{b} \right) = 
+	\left| \frac{x}{b} = t \right| = 
+	\int_{0}^{\infty}
+	\frac{\cos abt}{1 + t^{2}} dt =
+	\frac{\pi}{2} e^{- \left|ab\right|}
+	$$
+	(нашли производную, теперь интегрируем)
+	$$
+	f(a, b, c) = 
+	\frac{\pi}{2}
+	\int e^{- \left|ab\right|} db = 
+	- \frac{\pi}{2}
+	\frac{1}{\left|a\right|}
+	e^{- \left|ab\right|} + 
+	c(a, c).
+	$$
+	
+	$$
+	f(a, c, c) = 
+	0 =
+	-\frac{\pi}{2a}
+	e^{-ac} + c(a, c)
+	$$
+	
+	$$
+	c(a, c) = \frac{\pi}{2a}e^{-ac}
+	$$
+	
+	И так
+	$$
+	f(a, c, c) = 
+	0 =
+	-\frac{\pi}{2a}
+	e^{-ab} +
+	\frac{\pi}{2a}e^{-ac} =
+	\frac{\pi}{2a}
+	e^{-a}
+	\left(e^{c} - e^{b}\right)
+	$$
+	
+	(ps: модуль можно не писать a, b, c > 0)
+	
+\end{document}
